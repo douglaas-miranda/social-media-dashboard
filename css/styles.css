@@ -1,2 +1,34 @@
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+    font-family: 'Inter';
+    background-color: hsl(0, 0%, 100%);
+}
+
+.cabecalho {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.header-texto, .header-darkmode {
+    font-weight: 700;
+    color:  hsl(228, 12%, 44%)
+}
+
+.header-titulo {
+    font-weight: 700;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
