@@ -13,6 +13,7 @@ body {
 
 .cabecalho {
     background-color: hsl(225, 100%, 98%);
+    padding: 2rem 14rem 10rem 14rem;
 }
 
 .header-texto, .header-darkmode {
@@ -38,8 +39,9 @@ body {
 
 .main-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 6rem;
 }
 
 .main-conteudo {
@@ -47,4 +49,64 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    background-color: hsl(224, 27%, 89%);
+    border-radius: .3rem;
+    width: 238px;
+    height: 190px;
+
+}
+
+.perfil {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.n-followers {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.followers {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.today {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.overview-container, .card-container1, .card-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-container {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: hsl(224, 27%, 89%);
+}
+
+.card-container1, .card-container2 {
+    gap: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 238px;
+    border-radius: .3rem;
+    padding: 2rem 0 0 0rem;
+}
+
+.card-texto, .card-num {
+    margin-left: 1rem;
 }
