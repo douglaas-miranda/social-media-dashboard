@@ -13,7 +13,7 @@ body {
 
 .cabecalho {
     background-color: hsl(225, 100%, 98%);
-    padding: 2rem 14rem 10rem 14rem;
+    padding: 2rem 20rem 10rem 20rem;
 }
 
 .header-texto, .header-darkmode {
@@ -41,7 +41,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .main-conteudo {
@@ -53,6 +54,7 @@ body {
     border-radius: .3rem;
     width: 238px;
     height: 190px;
+    padding: 0 0 1rem 0;
 
 }
 
@@ -60,6 +62,7 @@ body {
     font-size: 10px;
     font-weight: 700;
     margin-top: 2rem;
+    color: hsl(228, 12%, 44%);
 }
 
 .n-followers {
@@ -72,22 +75,31 @@ body {
     font-size: 12px;
     letter-spacing: 4px;
     font-weight: 700;
+    color: hsl(228, 12%, 44%);
 }
 
 .today {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+
+.titulo-overview {
+    margin: 3rem 0 1rem 20rem;
+    color: hsl(228, 12%, 44%);;
 }
 
 .overview-container, .card-container1, .card-container2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .overview-container {
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .card {
@@ -95,7 +107,7 @@ body {
 }
 
 .card-container1, .card-container2 {
-    gap: 6rem;
+    gap: 2rem;
 }
 
 .card {
@@ -104,9 +116,67 @@ body {
     gap: 1rem;
     width: 238px;
     border-radius: .3rem;
-    padding: 2rem 0 0 0rem;
+    padding: 2rem 0 1rem 0rem;
 }
 
 .card-texto, .card-num {
     margin-left: 1rem;
+}
+
+.card-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.porcentagem {
+    margin-right: 1rem;
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+
+.perfil, .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.red {
+    color: hsl(356, 69%, 56%);
+}
+
+.facebook::before {
+    content: url('../images/icon-facebook.svg');
+}
+
+.twitter::before {
+    content: url('../images/icon-twitter.svg');
+}
+
+.instagram::before {
+    content: url('../images/icon-instagram.svg');
+}
+
+.youtube::before {
+    content: url('../images/icon-youtube.svg');
+}
+
+.up::before {
+    content: url('../images/icon-up.svg');
+}
+
+.down::before {
+    content: url('../images/icon-down.svg');
+}
+
+.card-texto {
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+.card-num {
+    font-weight: 700;
+    font-size: 30px;
 }
