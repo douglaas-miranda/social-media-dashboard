@@ -10,4 +10,4 @@ toggleButton.addEventListener('click', function () {
    background.classList.toggle('dark-footer');
    containerHeader.classList.toggle('dark-header');
    h1Text.classList.toggle('dark-text');
-})
+});
