@@ -4,6 +4,7 @@
     --DarkDesaturatedBlue /* (Card BG) */: hsl(228, 28%, 20%);
     --DesaturatedBlue/* (Text) */: hsl(228, 34%, 66%);
     --White/* (Text) */: hsl(0, 0%, 100%);
+    --VeryPaleBlue/* (Top BG Pattern) */: hsl(225, 100%, 98%);
 }
 
 .dark-background{
@@ -12,6 +13,10 @@
 
 .dark-header {
     background-color: var(--VeryDarkBlue1);
+}
+
+.dark-hr .linha {
+    border-color: var(--DarkDesaturatedBlue);
 }
 
 .dark-text {
@@ -126,6 +131,11 @@ input:checked + .slider {
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+.linha {
+    display: none;
+}
 
 .darkmode {
     display: flex;
@@ -342,6 +352,19 @@ input:checked + .slider {
     margin-right: 2rem;
 }
 
+.attribution {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.a-div {
+    display: flex;
+    gap: .3rem;
+}
+
 @media screen and (max-width: 420px) {
     
     .cabecalho {
@@ -367,6 +390,17 @@ input:checked + .slider {
 
     .header-darkmode {
         width: 90px;
+    }
+
+    .linha {
+        display: inline-block;
+        width: 100%;
+        border-color: var(--VeryPaleBlue);
+    }
+
+    .attribution {
+        flex-direction: column;
+        gap: .5rem;
     }
 }
 
@@ -396,6 +430,11 @@ input:checked + .slider {
     .header-darkmode {
         width: 90px;
     }
+
+/*     .attribution {
+        flex-direction: column;
+        gap: .5rem;
+    } */
 }
 
 @media screen and (min-width: 778px) {

@@ -8,6 +8,7 @@ toggleButton.addEventListener('click', function () {
    background.classList.toggle('dark-card');
    background.classList.toggle('dark-main');
    background.classList.toggle('dark-footer');
+   background.classList.toggle('dark-hr');
    containerHeader.classList.toggle('dark-header');
    h1Text.classList.toggle('dark-text');
 });
